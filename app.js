@@ -134,13 +134,23 @@
 
 // Map the array to change the “occupation” key to “job” and increment every age by 1.
 
-const updatedPeople = arr.map(obj => {
-    return { job: obj.occupation };
-  });
+// const updatedPeople = arr.map(obj => {
+//   //  return { job: obj.occupation };
+//     let newObj = {
+//         ...obj,
+//         age: Number(obj.age),
+//         job: obj.occupation
+//     }
+//     newObj.age += 1
+//     delete newObj.occupation;
+//     return newObj;
+// });
   
-  console.log(updatedPeople);
+//   console.log(updatedPeople);
 
 // Use the reduce method to calculate the sum of the ages.
+
+
 // Then, use the result to calculate the average age.
 
 
