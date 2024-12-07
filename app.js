@@ -1,15 +1,33 @@
 // // Functions:
 
 // // 1. FuncDeclaration()
-// function thisIsAFuncDeclaration() {}
+//  function thisIsAFuncDeclaration() {
 
-// // 2. Arrow Function()
-// const thisIsAnArrowFunc = () => {};
+//  }
+
+// // // // 2. Arrow Function()
+//  const thisIsAnArrowFunc = () => {
+
+// //  };
+function sayHello(a,b,name) {
+    console.log("Hello " +name + ", This is the new number "+(a+b)+"!");
+}
+// sayHello("BIJU");
+
+const establishNewNum = () => {
+    return 19
+}
+const newNum = () => {
+    return 30
+}
+sayHello(establishNewNum(),newNum(), "BIJU");
+
 
 // // ..... these are, however, "CALLED" the same way
 // thisIsAFuncDeclaration();
 
 // thisIsAnArrowFunc();
+
 
 // function add(a, b) {
 //   // -----params-
@@ -29,7 +47,7 @@
 // add(50,200)
 // add(253423423,324234234100)
 // add(25,1023423424232340)
-// // --args
+// // // --args
 // add(establishNewNum(), 2)
 //     // 21
 
@@ -111,13 +129,13 @@
 
 // Sort the array by age.
 
-    let arr = [
-        { id: "42", name: "Bruce", occupation: "Knight", age: "41" }, 
-        { id: "48", name: "Barry", occupation: "Runner", age: "25" }, 
-        { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" }, 
-        { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" }, 
-        { id: "7", name: "Bilbo", occupation: "None", age: "111" }
-    ]
+    // let arr = [
+    //     { id: "42", name: "Bruce", occupation: "Knight", age: "41" }, 
+    //     { id: "48", name: "Barry", occupation: "Runner", age: "25" }, 
+    //     { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" }, 
+    //     { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" }, 
+    //     { id: "7", name: "Bilbo", occupation: "None", age: "111" }
+    // ]
 //     arr.sort ((a,b) => a.age - b.age);
 //    arr.forEach((obj) => {
 //     console.log(`${obj.age} ${obj.id} ${obj.name} ${obj.occupation}`);
